@@ -4,4 +4,8 @@ public class Printer {
     public Printer( int paperLeft){
         this.paperLeft = paperLeft;
     }
+
+    public int getPaperLeft(){
+        return paperLeft;
+    }
 }
