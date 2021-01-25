@@ -6,8 +6,12 @@ public class Calculator {
         this.num1 = num1;
         this.num2 = num2;
     }
+
+    public long add(){
+        return num1 + num2;
+    }
 }
-}
+
 
 
 
