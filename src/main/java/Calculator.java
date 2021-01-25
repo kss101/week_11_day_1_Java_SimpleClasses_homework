@@ -14,6 +14,10 @@ public class Calculator {
     public long subtract(){
         return num1 - num2;
     }
+
+    public long multiply(){
+        return num1 * num2;
+    }
 }
 
 
