@@ -16,4 +16,8 @@ public class WaterBottle {
     public void empty(){
         volume = 0;
     }
+
+    public void fill(){
+        volume = 100;
+    }
 }
