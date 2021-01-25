@@ -18,7 +18,11 @@ public class PrinterTest {
 
     @Test
     public void canPrint(){
-     //   printer.printCopies(10, 5);
-      //  assertEquals(900, printer.getPaperLeft());
+        printer.printCopies(10, 5);
+        assertEquals(950, printer.getPaperLeft());
+    }
+    @Test
+    public void cantPrint(){
+        assertEquals("Unable to print. Insufficient paper", printer.printCopies(100, 50));
     }
 }
