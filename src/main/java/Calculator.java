@@ -10,6 +10,10 @@ public class Calculator {
     public long add(){
         return num1 + num2;
     }
+
+    public long subtract(){
+        return num1 - num2;
+    }
 }
 
 
