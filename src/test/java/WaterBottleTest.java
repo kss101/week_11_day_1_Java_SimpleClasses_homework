@@ -33,8 +33,8 @@ public class WaterBottleTest {
 
     @Test
     public void canEmpty(){
-     //  waterbottle.empty();
-       // assertEquals(0, waterbottle.getVolume());
+        waterbottle.empty();
+        assertEquals(0, waterbottle.getVolume());
 
     }
     public void canFill(){

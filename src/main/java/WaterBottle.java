@@ -12,4 +12,8 @@ public class WaterBottle {
     public void drink(){
         volume = volume - 10;
     }
+
+    public void empty(){
+        volume = 0;
+    }
 }
