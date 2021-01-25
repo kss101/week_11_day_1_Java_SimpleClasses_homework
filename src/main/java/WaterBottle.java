@@ -5,4 +5,7 @@ public class WaterBottle {
         this.volume = 100;
     }
 
+    public int getVolume(){
+        return volume;
+    }
 }
