@@ -8,7 +8,7 @@ public class PrinterTest {
     private Printer printer;
     @Before
     public void before(){
-        printer = new Printer((1000));
+        printer = new Printer(1000, 100);
     }
 
     @Test
@@ -17,12 +17,19 @@ public class PrinterTest {
     }
 
     @Test
+    public void hasTonerLeft(){
+        assertEquals(100, printer.getTonerVolumeLeft());
+    }
+
+    @Test
     public void canPrint(){
         printer.printCopies(10, 5);
         assertEquals(950, printer.getPaperLeft());
     }
+
     @Test
     public void cantPrint(){
-        assertEquals("Unable to print. Insufficient paper", printer.printCopies(100, 50));
+        assertEquals("Unable to print. Insufficient paper or toner", printer.printCopies(10, 50));
     }
+
 }
